@@ -17,7 +17,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.setWindowFlags(Qt.FramelessWindowHint)
         self.setAttribute(Qt.WA_TranslucentBackground)
         self.setupUi(self)
-        self.show()
+        self.showFullScreen() 
         loadJsonStyle(self)
         
         #BARRA DE PROGRESSO

@@ -20,7 +20,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1920, 1080)
+        MainWindow.resize(1366, 768)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.horizontalLayout = QHBoxLayout(self.centralwidget)
@@ -952,7 +952,6 @@ class Ui_MainWindow(object):
         self.images_games.setStyleSheet(u"background-position: center;\n"
 "background-repeat:no-repeat;\n"
 "background-color: rgba(0, 0, 0, 0); \n"
-"background-size: cover;\n"
 "border-radius: 7px;")
         self.images_games.setFrameShape(QFrame.StyledPanel)
         self.images_games.setFrameShadow(QFrame.Raised)

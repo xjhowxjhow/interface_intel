@@ -12,7 +12,6 @@ from custom_qstacked_widgets import *
 class funcoes():
     def changeimg(self):
         def theard():
-            print("aqui")
             while True:
                 try:
                     for i in range(4):
@@ -39,9 +38,7 @@ class funcoes():
                 time.sleep(0.01)
                 count = count +1
                 self.progressBar.setValue(count)
-                print(count)
                 if count == 100:
-                    print("paro")
                     self.stackedWidget.setCurrentIndex(1)
                     break
             #https://www.pythonguis.com/tutorials/multithreading-pyside-applications-qthreadpool/
