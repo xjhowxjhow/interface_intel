@@ -35,7 +35,7 @@ class funcoes():
             
             count = 0
             while count <= 200 :
-                time.sleep(0.01)
+                time.sleep(0.02)
                 count = count +1
                 self.progressBar.setValue(count)
                 if count == 100:
