@@ -56,7 +56,16 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         else:
             WINDOW_SIZE = 0 
             self.showNormal()
-
+    #MOVE JANELA
+    def mousePressEvent(self, event):
+        self.offset = event.pos()   
+    #MOVE JANELA
+    def mouseMoveEvent(self, event):
+        x=event.globalX()
+        y=event.globalY()
+        x_w = self.offset.x()
+        y_w = self.offset.y()
+        self.move(x-x_w, y-y_w)
 
 
 if __name__ == '__main__':
