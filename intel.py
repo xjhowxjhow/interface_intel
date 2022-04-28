@@ -1108,7 +1108,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(1)
+        self.stackedWidget.setCurrentIndex(0)
         self.contets.setCurrentIndex(0)
         self.images_games.setCurrentIndex(0)
 
