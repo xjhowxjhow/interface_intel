@@ -157,7 +157,7 @@ class Ui_MainWindow(object):
         self.main.setStyleSheet(u"background-image: url(:/fundo/back2.jpg);\n"
 "background-position: center;\n"
 "background-repeat:no-repeat;\n"
-"border: 0px;\n"
+"border: 0px; border-radius:0px;\n"
 "")
         self.verticalLayout = QVBoxLayout(self.main)
         self.verticalLayout.setSpacing(0)
