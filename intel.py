@@ -20,16 +20,21 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1600, 768)
+        MainWindow.resize(1547, 816)
+        MainWindow.setStyleSheet(u"\n"
+"border-radius:10px;\n"
+"")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
+        self.centralwidget.setStyleSheet(u"")
         self.horizontalLayout = QHBoxLayout(self.centralwidget)
         self.horizontalLayout.setSpacing(0)
         self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
         self.stackedWidget = QStackedWidget(self.centralwidget)
         self.stackedWidget.setObjectName(u"stackedWidget")
-        self.stackedWidget.setStyleSheet(u"background-color: rgb(0, 113, 197);border:none;")
+        self.stackedWidget.setStyleSheet(u"background-color: rgb(0, 113, 197);\n"
+"border:none;")
         self.stackedWidget.setFrameShape(QFrame.StyledPanel)
         self.stackedWidget.setFrameShadow(QFrame.Raised)
         self.login = QWidget()
@@ -149,11 +154,11 @@ class Ui_MainWindow(object):
         self.stackedWidget.addWidget(self.login)
         self.main = QWidget()
         self.main.setObjectName(u"main")
-        self.main.setStyleSheet(u"background-color: rgb(45, 45, 68);\n"
-"background-image: url(:/fundo/back2.jpg);\n"
+        self.main.setStyleSheet(u"background-image: url(:/fundo/back2.jpg);\n"
 "background-position: center;\n"
 "background-repeat:no-repeat;\n"
-"border: 0px;")
+"border: 0px;\n"
+"")
         self.verticalLayout = QVBoxLayout(self.main)
         self.verticalLayout.setSpacing(0)
         self.verticalLayout.setObjectName(u"verticalLayout")
@@ -174,6 +179,8 @@ class Ui_MainWindow(object):
         self.menu.setMaximumSize(QSize(300, 16777215))
         self.menu.setStyleSheet(u"background-image: url();\n"
 "background-color: rgba(0, 0, 10, 90);\n"
+"border-top-right-radius:0px;\n"
+"border-bottom-right-radius:0px;\n"
 "\n"
 "")
         self.menu.setFrameShape(QFrame.NoFrame)
@@ -186,7 +193,10 @@ class Ui_MainWindow(object):
         self.mainlogo.setObjectName(u"mainlogo")
         self.mainlogo.setMinimumSize(QSize(0, 90))
         self.mainlogo.setMaximumSize(QSize(16777215, 90))
-        self.mainlogo.setStyleSheet(u"background-color: rgba(0, 0, 0, 70);")
+        self.mainlogo.setStyleSheet(u"background-color: rgba(0, 0, 0, 70);\n"
+"border-top-right-radius:0px;\n"
+"border-bottom-right-radius:0px;\n"
+"border-bottom-left-radius:0px;")
         self.mainlogo.setFrameShape(QFrame.StyledPanel)
         self.mainlogo.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_2 = QHBoxLayout(self.mainlogo)
@@ -225,6 +235,7 @@ class Ui_MainWindow(object):
         self.categorias = QFrame(self.menu)
         self.categorias.setObjectName(u"categorias")
         self.categorias.setStyleSheet(u"background-color: rgba(0, 0, 0, 70);\n"
+"border-top-left-radius:0px;\n"
 "")
         self.categorias.setFrameShape(QFrame.StyledPanel)
         self.categorias.setFrameShadow(QFrame.Raised)
@@ -241,7 +252,7 @@ class Ui_MainWindow(object):
         self.scrolbar.setFrameShadow(QFrame.Raised)
         self.animcurretnpage = QFrame(self.scrolbar)
         self.animcurretnpage.setObjectName(u"animcurretnpage")
-        self.animcurretnpage.setGeometry(QRect(0, 24, 20, 5))
+        self.animcurretnpage.setGeometry(QRect(0, 75, 20, 5))
         self.animcurretnpage.setMinimumSize(QSize(20, 0))
         self.animcurretnpage.setMaximumSize(QSize(5, 10))
         self.animcurretnpage.setStyleSheet(u"background-color: rgb(0, 85, 255);")
@@ -283,7 +294,7 @@ class Ui_MainWindow(object):
 "QPushButton{\n"
 "\n"
 "\n"
-"\n"
+"	border-radius:0px;\n"
 "\n"
 "	padding:15px;\n"
 "	color: rgb(255, 255, 255);\n"
@@ -324,11 +335,11 @@ class Ui_MainWindow(object):
 "\n"
 "\n"
 "QPushButton{\n"
-"	\n"
 "\n"
 "\n"
-"padding:15px;\n"
-"	\n"
+"	border-radius:0px;\n"
+"\n"
+"	padding:15px;\n"
 "	color: rgb(255, 255, 255);\n"
 "	background-color: rgba(0, 0, 0, 0); \n"
 "	 text-align: left;\n"
@@ -343,8 +354,8 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QPushButton:pressed{\n"
-"	font:  14pt \"Microsoft YaHei\";\n"
 "	\n"
+"font:  14pt \"Microsoft YaHei\";\n"
 "background-color: rgba(0, 0, 0, 75); \n"
 "\n"
 "}")
@@ -361,12 +372,11 @@ class Ui_MainWindow(object):
 "\n"
 "\n"
 "QPushButton{\n"
-"	\n"
 "\n"
 "\n"
+"	border-radius:0px;\n"
 "\n"
-"padding:15px;\n"
-"	\n"
+"	padding:15px;\n"
 "	color: rgb(255, 255, 255);\n"
 "	background-color: rgba(0, 0, 0, 0); \n"
 "	 text-align: left;\n"
@@ -382,7 +392,7 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:pressed{\n"
 "	\n"
-"	font:  14pt \"Microsoft YaHei\";\n"
+"font:  14pt \"Microsoft YaHei\";\n"
 "background-color: rgba(0, 0, 0, 75); \n"
 "\n"
 "}")
@@ -399,12 +409,11 @@ class Ui_MainWindow(object):
 "\n"
 "\n"
 "QPushButton{\n"
-"	\n"
 "\n"
 "\n"
+"	border-radius:0px;\n"
 "\n"
-"padding:15px;\n"
-"	\n"
+"	padding:15px;\n"
 "	color: rgb(255, 255, 255);\n"
 "	background-color: rgba(0, 0, 0, 0); \n"
 "	 text-align: left;\n"
@@ -419,8 +428,8 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QPushButton:pressed{\n"
-"	font:  14pt \"Microsoft YaHei\";\n"
 "	\n"
+"font:  14pt \"Microsoft YaHei\";\n"
 "background-color: rgba(0, 0, 0, 75); \n"
 "\n"
 "}")
@@ -437,11 +446,11 @@ class Ui_MainWindow(object):
 "\n"
 "\n"
 "QPushButton{\n"
-"	\n"
 "\n"
 "\n"
-"padding:15px;\n"
-"	\n"
+"	border-radius:0px;\n"
+"\n"
+"	padding:15px;\n"
 "	color: rgb(255, 255, 255);\n"
 "	background-color: rgba(0, 0, 0, 0); \n"
 "	 text-align: left;\n"
@@ -457,7 +466,7 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:pressed{\n"
 "	\n"
-"	font:  14pt \"Microsoft YaHei\";\n"
+"font:  14pt \"Microsoft YaHei\";\n"
 "background-color: rgba(0, 0, 0, 75); \n"
 "\n"
 "}")
@@ -472,11 +481,11 @@ class Ui_MainWindow(object):
 "\n"
 "\n"
 "QPushButton{\n"
-"	\n"
 "\n"
-"padding:15px;\n"
 "\n"
-"	\n"
+"	border-radius:0px;\n"
+"\n"
+"	padding:15px;\n"
 "	color: rgb(255, 255, 255);\n"
 "	background-color: rgba(0, 0, 0, 0); \n"
 "	 text-align: left;\n"
@@ -491,8 +500,8 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QPushButton:pressed{\n"
-"	font:  14pt \"Microsoft YaHei\";\n"
 "	\n"
+"font:  14pt \"Microsoft YaHei\";\n"
 "background-color: rgba(0, 0, 0, 75); \n"
 "\n"
 "}")
@@ -513,12 +522,11 @@ class Ui_MainWindow(object):
 "\n"
 "\n"
 "QPushButton{\n"
-"	\n"
 "\n"
 "\n"
+"	border-radius:0px;\n"
 "\n"
-"padding:15px;\n"
-"	\n"
+"	padding:15px;\n"
 "	color: rgb(255, 255, 255);\n"
 "	background-color: rgba(0, 0, 0, 0); \n"
 "	 text-align: left;\n"
@@ -533,8 +541,8 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QPushButton:pressed{\n"
-"\n"
-"\n"
+"	\n"
+"font:  14pt \"Microsoft YaHei\";\n"
 "background-color: rgba(0, 0, 0, 75); \n"
 "\n"
 "}")
@@ -559,6 +567,8 @@ class Ui_MainWindow(object):
         self.content.setMaximumSize(QSize(16777215, 16777215))
         self.content.setStyleSheet(u"background-image: url();\n"
 "background-color: rgba(0, 0, 10, 200);\n"
+"border-top-left-radius:0px;\n"
+"border-top-right-radius:0px;\n"
 "")
         self.content.setFrameShape(QFrame.NoFrame)
         self.content.setFrameShadow(QFrame.Raised)
@@ -729,7 +739,7 @@ class Ui_MainWindow(object):
 "	color: rgb(255, 255, 255);\n"
 "    background-color: rgba(0, 0, 0, 0); \n"
 "	 text-align: center;\n"
-"\n"
+"	border-radius:0px;\n"
 "}\n"
 "\n"
 "QPushButton:hover{\n"
@@ -761,7 +771,7 @@ class Ui_MainWindow(object):
 "	color: rgb(255, 255, 255);\n"
 "    background-color: rgba(0, 0, 0, 0); \n"
 "	 text-align: center;\n"
-"\n"
+"	border-radius:0px;border-radius:0px;\n"
 "}\n"
 "\n"
 "QPushButton:hover{\n"
@@ -1057,7 +1067,7 @@ class Ui_MainWindow(object):
 "	color: rgb(255, 255, 255);\n"
 "    background-color: rgba(0, 0, 0, 0); \n"
 "	 text-align: center;\n"
-"\n"
+"	border-radius:0px;\n"
 "}\n"
 "\n"
 "QPushButton:hover{\n"
@@ -1097,7 +1107,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(1)
         self.contets.setCurrentIndex(0)
         self.images_games.setCurrentIndex(0)
 
