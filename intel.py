@@ -157,7 +157,7 @@ class Ui_MainWindow(object):
         self.main.setStyleSheet(u"background-image: url(:/fundo/back2.jpg);\n"
 "background-position: center;\n"
 "background-repeat:no-repeat;\n"
-"border: 0px; border-radius:0px;\n"
+"border: 0px;\n"
 "")
         self.verticalLayout = QVBoxLayout(self.main)
         self.verticalLayout.setSpacing(0)
@@ -771,7 +771,7 @@ class Ui_MainWindow(object):
 "	color: rgb(255, 255, 255);\n"
 "    background-color: rgba(0, 0, 0, 0); \n"
 "	 text-align: center;\n"
-"	border-radius:0px;border-radius:0px;\n"
+"	border-radius:0px;\n"
 "}\n"
 "\n"
 "QPushButton:hover{\n"
@@ -782,7 +782,7 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QPushButton:pressed{\n"
-"	\n"
+"border-radius:0px;\n"
 "border-bottom: 1px solid rgb(0, 188, 242);\n"
 "\n"
 "}")
@@ -1035,6 +1035,7 @@ class Ui_MainWindow(object):
 "	color: rgb(255, 255, 255);\n"
 "    background-color: rgba(0, 0, 0, 0); \n"
 "	 text-align: center;\n"
+"	border-radius:0px;\n"
 "\n"
 "}\n"
 "\n"
@@ -1046,7 +1047,7 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QPushButton:pressed{\n"
-"	\n"
+"	border-radius:0px;\n"
 "border-bottom: 1px solid rgb(0, 188, 242);\n"
 "\n"
 "}")
