@@ -359,7 +359,7 @@ def loadJsonStyle(self):
 
 def navigationButtons(stackedWidget, pushButton, widgetPage):    
     pushButton.clicked.connect(lambda: stackedWidget.setCurrentWidget(widgetPage))
-
+    
 def returnAnimationEasingCurve(easingCurveName):
     if len(str(easingCurveName)) > 0:
         if str(easingCurveName) == "OutQuad":               

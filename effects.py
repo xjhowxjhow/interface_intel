@@ -43,10 +43,10 @@ class efeitos():
       #effects.efeitos.setamenu(self)
 
     def effectslide(self): #TODO TRANSICAO PRINCIPAL MAIN NAO MEXER
-        self.contets.setTransitionDirection(QtCore.Qt.Horizontal)
-        self.contets.setTransitionSpeed(100)
-        self.contets.setTransitionEasingCurve(QtCore.QEasingCurve.Linear)
-        self.contets.setSlideTransition(True)
+        self.adss.setTransitionDirection(QtCore.Qt.Horizontal)
+        self.adss.setTransitionSpeed(100)
+        self.adss.setTransitionEasingCurve(QtCore.QEasingCurve.Linear)
+        self.adss.setSlideTransition(True)
     
     def transisaopage(self):
         duracao = 350
@@ -59,7 +59,109 @@ class efeitos():
         self.animAE.start()
       
     
-  
+    def inidicador_page1(self):
+        self.pushButton.setStyleSheet(u"\n"
+"\n"
+"\n"
+"\n"
+"QPushButton{\n"
+"	\n"
+"border-bottom: 3px solid rgba(255, 255, 255, 0); \n"
+"	color: rgb(255, 255, 255);\n"
+"    background-color: rgba(0, 0, 0, 0); \n"
+"	 text-align: center;\n"
+"	border-radius:0px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"	\n"
+"	\n"
+"background-color: rgba(0, 0, 0, 0); \n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"border-radius:0px;\n"
+"border-bottom: 1px solid rgb(0, 188, 242);\n"
+"\n"
+"}")
+        self.pushButton_9.setStyleSheet(u"\n"
+"\n"
+"\n"
+"\n"
+"QPushButton{\n"
+"	\n"
+"border-bottom: 1px solid rgb(0, 188, 242);\n"
+"	color: rgb(255, 255, 255);\n"
+"    background-color: rgba(0, 0, 0, 0); \n"
+"	 text-align: center;\n"
+"	border-radius:0px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"	\n"
+"	\n"
+"background-color: rgba(0, 0, 0, 0); \n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"	\n"
+"border-bottom: 1px solid rgb(0, 188, 242);\n"
+"\n"
+"}")
+    def inidicador_page2(self):
+    
+        self.pushButton.setStyleSheet(u"\n"
+"\n"
+"\n"
+"\n"
+"QPushButton{\n"
+"	\n"
+"border-bottom: 1px solid rgb(0, 188, 242);\n"
+"	color: rgb(255, 255, 255);\n"
+"    background-color: rgba(0, 0, 0, 0); \n"
+"	 text-align: center;\n"
+"	border-radius:0px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"	\n"
+"	\n"
+"background-color: rgba(0, 0, 0, 0); \n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"	\n"
+"border-bottom: 1px solid rgb(0, 188, 242);\n"
+"\n"
+"}")
+        self.pushButton_9.setStyleSheet(u"\n"
+"\n"
+"\n"
+"\n"
+"QPushButton{\n"
+"	\n"
+"border-bottom: 3px solid rgba(255, 255, 255, 0); \n"
+"	color: rgb(255, 255, 255);\n"
+"    background-color: rgba(0, 0, 0, 0); \n"
+"	 text-align: center;\n"
+"	border-radius:0px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"	\n"
+"	\n"
+"background-color: rgba(0, 0, 0, 0); \n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"border-radius:0px;\n"
+"border-bottom: 1px solid rgb(0, 188, 242);\n"
+"\n"
+"}")
 
 class setanimcurrent():
     global TIMER_SETA

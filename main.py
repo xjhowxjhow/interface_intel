@@ -44,8 +44,12 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.pushButton_6.clicked.connect(lambda:effects.setanimcurrent.anim5(self))
         self.pushButton_5.clicked.connect(lambda:effects.setanimcurrent.anim6(self))        
         self.pushButton.clicked.connect(lambda:effects.efeitos.transisaopage(self))
-        self.pushButton_10.clicked.connect(lambda:effects.efeitos.transisaopage(self))
+        self.pushButton_9.clicked.connect(lambda:effects.efeitos.transisaopage(self))
         
+        #MUDA INDICADOR PAGE1
+        
+        self.pushButton_9.clicked.connect(lambda:effects.efeitos.inidicador_page1(self))
+        self.pushButton.clicked.connect(lambda:effects.efeitos.inidicador_page2(self))
         #BOTOES AÇÃO FUNCOES
         self.pushButton_3.clicked.connect(lambda:self.contets.setCurrentIndex(1))
         self.pushButton_2.clicked.connect(lambda:self.contets.setCurrentIndex(0))

@@ -1,20 +1,20 @@
 {
 	"QStackedWidget":[
 		{
-			"name":"contets",
+			"name":"adss",
 			"transitionAnimation":[
 				{
 					"fade":[
 						{
 							"active": false,
-							"duration":1000,
+							"duration":100,
 							"easingCurve": "OutBack"
 						}
 					],
 					"slide":[
 						{
 							"active":true,
-							"duration": 5000,
+							"duration": 100,
 							"direction": "vertical",
 							"easingCurve": "OutBack"
 						}
@@ -27,8 +27,8 @@
 					"previousPage": "N",
 					"navigationButtons":[
 						{
-							"pushButton_9": "contetsPage2",
-							"pushButton_10": "contetsPage1"
+							"pushButton": "adssPage1",
+							"pushButton_9": "adssPage2"
 						}
 					]
 				}

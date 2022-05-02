@@ -702,17 +702,19 @@ class Ui_MainWindow(object):
         self.verticalLayout_5.setSpacing(0)
         self.verticalLayout_5.setObjectName(u"verticalLayout_5")
         self.verticalLayout_5.setContentsMargins(0, 0, 0, 0)
-        self.PAG1 = QFrame(self.contetsPage1)
+        self.PAG1 = QStackedWidget(self.contetsPage1)
         self.PAG1.setObjectName(u"PAG1")
         self.PAG1.setStyleSheet(u"background-color: rgba(0, 0, 0,0);\n"
 "")
         self.PAG1.setFrameShape(QFrame.StyledPanel)
         self.PAG1.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_6 = QVBoxLayout(self.PAG1)
+        self.PAG1Page1 = QWidget()
+        self.PAG1Page1.setObjectName(u"PAG1Page1")
+        self.verticalLayout_6 = QVBoxLayout(self.PAG1Page1)
         self.verticalLayout_6.setSpacing(0)
         self.verticalLayout_6.setObjectName(u"verticalLayout_6")
         self.verticalLayout_6.setContentsMargins(40, 0, 0, 0)
-        self.TOPBUT = QFrame(self.PAG1)
+        self.TOPBUT = QFrame(self.PAG1Page1)
         self.TOPBUT.setObjectName(u"TOPBUT")
         self.TOPBUT.setMaximumSize(QSize(16777215, 60))
         self.TOPBUT.setStyleSheet(u"background-color: rgba(0, 0, 0,0);")
@@ -796,7 +798,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_6.addWidget(self.TOPBUT)
 
-        self.line = QFrame(self.PAG1)
+        self.line = QFrame(self.PAG1Page1)
         self.line.setObjectName(u"line")
         self.line.setMaximumSize(QSize(16777215, 1))
         self.line.setStyleSheet(u"background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0.00214133 rgba(160, 160, 160, 255), stop:0.33833 rgba(54, 56, 121, 125), stop:0.66167 rgba(80, 58, 161, 27), stop:1 rgba(255, 255, 255, 192));")
@@ -805,17 +807,19 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_6.addWidget(self.line)
 
-        self.adss = QFrame(self.PAG1)
+        self.adss = QStackedWidget(self.PAG1Page1)
         self.adss.setObjectName(u"adss")
         self.adss.setMaximumSize(QSize(16777215, 16777215))
         self.adss.setStyleSheet(u"background-color: rgba(0, 0, 0, 0); ")
         self.adss.setFrameShape(QFrame.StyledPanel)
         self.adss.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_6 = QHBoxLayout(self.adss)
+        self.adssPage1 = QWidget()
+        self.adssPage1.setObjectName(u"adssPage1")
+        self.horizontalLayout_6 = QHBoxLayout(self.adssPage1)
         self.horizontalLayout_6.setSpacing(0)
         self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
         self.horizontalLayout_6.setContentsMargins(0, 0, 50, 0)
-        self.ads_esquerda = QFrame(self.adss)
+        self.ads_esquerda = QFrame(self.adssPage1)
         self.ads_esquerda.setObjectName(u"ads_esquerda")
         self.ads_esquerda.setMinimumSize(QSize(565, 34))
         self.ads_esquerda.setMaximumSize(QSize(16777215, 16777215))
@@ -942,7 +946,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_6.addWidget(self.ads_esquerda)
 
-        self.ads_direita = QFrame(self.adss)
+        self.ads_direita = QFrame(self.adssPage1)
         self.ads_direita.setObjectName(u"ads_direita")
         self.ads_direita.setMinimumSize(QSize(590, 1))
         self.ads_direita.setStyleSheet(u"background-color: rgba(0, 0, 0,0);")
@@ -1001,9 +1005,14 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_6.addWidget(self.ads_direita)
 
+        self.adss.addWidget(self.adssPage1)
+        self.adssPage2 = QWidget()
+        self.adssPage2.setObjectName(u"adssPage2")
+        self.adss.addWidget(self.adssPage2)
 
         self.verticalLayout_6.addWidget(self.adss)
 
+        self.PAG1.addWidget(self.PAG1Page1)
 
         self.verticalLayout_5.addWidget(self.PAG1)
 
@@ -1021,75 +1030,6 @@ class Ui_MainWindow(object):
         self.horizontalLayout_10.setSpacing(0)
         self.horizontalLayout_10.setObjectName(u"horizontalLayout_10")
         self.horizontalLayout_10.setContentsMargins(0, 0, 0, 0)
-        self.pushButton_10 = QPushButton(self.TOPBUT_2)
-        self.pushButton_10.setObjectName(u"pushButton_10")
-        self.pushButton_10.setMinimumSize(QSize(120, 40))
-        self.pushButton_10.setFont(font3)
-        self.pushButton_10.setStyleSheet(u"\n"
-"\n"
-"\n"
-"\n"
-"QPushButton{\n"
-"	\n"
-"border-bottom: 3px solid rgba(255, 255, 255, 0); \n"
-"	color: rgb(255, 255, 255);\n"
-"    background-color: rgba(0, 0, 0, 0); \n"
-"	 text-align: center;\n"
-"	border-radius:0px;\n"
-"\n"
-"}\n"
-"\n"
-"QPushButton:hover{\n"
-"	\n"
-"	\n"
-"background-color: rgba(0, 0, 0, 0); \n"
-"\n"
-"}\n"
-"\n"
-"QPushButton:pressed{\n"
-"	border-radius:0px;\n"
-"border-bottom: 1px solid rgb(0, 188, 242);\n"
-"\n"
-"}")
-
-        self.horizontalLayout_10.addWidget(self.pushButton_10)
-
-        self.pushButton_11 = QPushButton(self.TOPBUT_2)
-        self.pushButton_11.setObjectName(u"pushButton_11")
-        self.pushButton_11.setMinimumSize(QSize(120, 40))
-        self.pushButton_11.setFont(font3)
-        self.pushButton_11.setStyleSheet(u"\n"
-"\n"
-"\n"
-"\n"
-"QPushButton{\n"
-"	\n"
-"border-bottom: 1px solid rgb(0, 188, 242);\n"
-"	color: rgb(255, 255, 255);\n"
-"    background-color: rgba(0, 0, 0, 0); \n"
-"	 text-align: center;\n"
-"	border-radius:0px;\n"
-"}\n"
-"\n"
-"QPushButton:hover{\n"
-"	\n"
-"	\n"
-"background-color: rgba(0, 0, 0, 0); \n"
-"\n"
-"}\n"
-"\n"
-"QPushButton:pressed{\n"
-"	\n"
-"border-bottom: 1px solid rgb(0, 188, 242);\n"
-"\n"
-"}")
-
-        self.horizontalLayout_10.addWidget(self.pushButton_11)
-
-        self.horizontalSpacer_3 = QSpacerItem(0, 0, QSizePolicy.Expanding, QSizePolicy.Minimum)
-
-        self.horizontalLayout_10.addItem(self.horizontalSpacer_3)
-
         self.contets.addWidget(self.contetsPage2)
 
         self.verticalLayout_2.addWidget(self.contets)
@@ -1110,6 +1050,7 @@ class Ui_MainWindow(object):
 
         self.stackedWidget.setCurrentIndex(0)
         self.contets.setCurrentIndex(0)
+        self.adss.setCurrentIndex(0)
         self.images_games.setCurrentIndex(0)
 
 
@@ -1144,7 +1085,4 @@ class Ui_MainWindow(object):
 "Selecione um jogo para adicionar \u00e0 sua biblioteca.\n"
 "", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ffffff;\">V\u00e1 para os c\u00e9us e experimente a alegria de voar na pr\u00f3xima gera\u00e7\u00e3o do Microsoft Flight Simulator.</span></p><p><span style=\" color:#ffffff;\"> O mundo est\u00e1 ao seu alcance.</span></p></body></html>", None))
-        self.pushButton_10.setText(QCoreApplication.translate("MainWindow", u"Jogos", None))
-        self.pushButton_11.setText(QCoreApplication.translate("MainWindow", u"Capturar", None))
     # retranslateUi
-
