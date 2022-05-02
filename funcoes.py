@@ -45,5 +45,3 @@ class funcoes():
         thread = threading.Thread(target=therad)
         thread.start()  
             
-        
-        

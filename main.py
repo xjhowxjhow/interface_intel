@@ -36,15 +36,19 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         effects.efeitos.shadow_widgets_ads_esquerda(self)
         effects.efeitos.effectslide(self)
 
-        #BOTOES        
+        #BOTOES AÇÃO EFEITOS     
         self.pushButton_2.clicked.connect(lambda:effects.setanimcurrent.anim1(self))
         self.pushButton_3.clicked.connect(lambda:effects.setanimcurrent.anim2(self))
         self.pushButton_4.clicked.connect(lambda:effects.setanimcurrent.anim3(self))
         self.pushButton_7.clicked.connect(lambda:effects.setanimcurrent.anim4(self))
         self.pushButton_6.clicked.connect(lambda:effects.setanimcurrent.anim5(self))
-        self.pushButton_5.clicked.connect(lambda:effects.setanimcurrent.anim6(self))
+        self.pushButton_5.clicked.connect(lambda:effects.setanimcurrent.anim6(self))        
+        self.pushButton.clicked.connect(lambda:effects.efeitos.transisaopage(self))
+        self.pushButton_10.clicked.connect(lambda:effects.efeitos.transisaopage(self))
         
-
+        #BOTOES AÇÃO FUNCOES
+        self.pushButton_3.clicked.connect(lambda:self.contets.setCurrentIndex(1))
+        self.pushButton_2.clicked.connect(lambda:self.contets.setCurrentIndex(0))
 
     def restore_or_maximize_window(self):
         # variavel global windows tela janela

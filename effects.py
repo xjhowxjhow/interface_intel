@@ -48,6 +48,19 @@ class efeitos():
         self.contets.setTransitionEasingCurve(QtCore.QEasingCurve.Linear)
         self.contets.setSlideTransition(True)
     
+    def transisaopage(self):
+        duracao = 350
+        print(self.animcurretnpage.geometry())
+        off = self.animcurretnpage.geometry()
+        self.animAE = QPropertyAnimation(self.ads_esquerda, b"geometry")
+        self.animAE.setDuration(duracao)
+        self.animAE.setStartValue(QRect(90, 0, 565, 740))
+        self.animAE.setEndValue(QRect(0, 0, 565 , 740))
+        self.animAE.start()
+      
+    
+  
+
 class setanimcurrent():
     global TIMER_SETA
     duracao = TIMER_SETA

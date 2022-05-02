@@ -252,7 +252,7 @@ class Ui_MainWindow(object):
         self.scrolbar.setFrameShadow(QFrame.Raised)
         self.animcurretnpage = QFrame(self.scrolbar)
         self.animcurretnpage.setObjectName(u"animcurretnpage")
-        self.animcurretnpage.setGeometry(QRect(0, 75, 20, 5))
+        self.animcurretnpage.setGeometry(QRect(0, 24, 20, 5))
         self.animcurretnpage.setMinimumSize(QSize(20, 0))
         self.animcurretnpage.setMaximumSize(QSize(5, 10))
         self.animcurretnpage.setStyleSheet(u"background-color: rgb(0, 85, 255);")
