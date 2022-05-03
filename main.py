@@ -53,6 +53,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         #BOTOES AÇÃO FUNCOES
         self.pushButton_3.clicked.connect(lambda:self.contets.setCurrentIndex(1))
         self.pushButton_2.clicked.connect(lambda:self.contets.setCurrentIndex(0))
+        #muda resolução
+        self.aply_res.clicked.connect(lambda:funcoes.funcoes.test_resol(self))
 
     def restore_or_maximize_window(self):
         # variavel global windows tela janela

@@ -20,7 +20,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1547, 816)
+        MainWindow.resize(1739, 789)
         MainWindow.setStyleSheet(u"\n"
 "border-radius:10px;\n"
 "")
@@ -948,7 +948,7 @@ class Ui_MainWindow(object):
 
         self.ads_direita = QFrame(self.adssPage1)
         self.ads_direita.setObjectName(u"ads_direita")
-        self.ads_direita.setMinimumSize(QSize(590, 1))
+        self.ads_direita.setMinimumSize(QSize(0, 0))
         self.ads_direita.setStyleSheet(u"background-color: rgba(0, 0, 0,0);")
         self.ads_direita.setFrameShape(QFrame.StyledPanel)
         self.ads_direita.setFrameShadow(QFrame.Raised)
@@ -961,7 +961,7 @@ class Ui_MainWindow(object):
 
         self.images_games = QStackedWidget(self.ads_direita)
         self.images_games.setObjectName(u"images_games")
-        self.images_games.setMinimumSize(QSize(500, 300))
+        self.images_games.setMinimumSize(QSize(0, 0))
         self.images_games.setMaximumSize(QSize(800, 600))
         self.images_games.setStyleSheet(u"background-position: center;\n"
 "background-repeat:no-repeat;\n"
@@ -1019,9 +1019,40 @@ class Ui_MainWindow(object):
         self.contets.addWidget(self.contetsPage1)
         self.contetsPage2 = QWidget()
         self.contetsPage2.setObjectName(u"contetsPage2")
-        self.TOPBUT_2 = QFrame(self.contetsPage2)
+        self.verticalLayout_11 = QVBoxLayout(self.contetsPage2)
+        self.verticalLayout_11.setObjectName(u"verticalLayout_11")
+        self.verticalLayout_11.setContentsMargins(40, -1, 40, -1)
+        self.frame_5 = QFrame(self.contetsPage2)
+        self.frame_5.setObjectName(u"frame_5")
+        self.frame_5.setMinimumSize(QSize(0, 350))
+        self.frame_5.setStyleSheet(u"background-color: rgba(255, 255, 255, 70);\n"
+"border-radius:10px;\n"
+"")
+        self.frame_5.setFrameShape(QFrame.StyledPanel)
+        self.frame_5.setFrameShadow(QFrame.Raised)
+        self.frame_13 = QFrame(self.frame_5)
+        self.frame_13.setObjectName(u"frame_13")
+        self.frame_13.setGeometry(QRect(630, 110, 291, 161))
+        self.frame_13.setFrameShape(QFrame.StyledPanel)
+        self.frame_13.setFrameShadow(QFrame.Raised)
+        self.frame_14 = QFrame(self.frame_5)
+        self.frame_14.setObjectName(u"frame_14")
+        self.frame_14.setGeometry(QRect(330, 110, 291, 161))
+        self.frame_14.setStyleSheet(u"")
+        self.frame_14.setFrameShape(QFrame.StyledPanel)
+        self.frame_14.setFrameShadow(QFrame.Raised)
+
+        self.verticalLayout_11.addWidget(self.frame_5)
+
+        self.frame_12 = QFrame(self.contetsPage2)
+        self.frame_12.setObjectName(u"frame_12")
+        self.frame_12.setStyleSheet(u"")
+        self.frame_12.setFrameShape(QFrame.StyledPanel)
+        self.frame_12.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_12 = QVBoxLayout(self.frame_12)
+        self.verticalLayout_12.setObjectName(u"verticalLayout_12")
+        self.TOPBUT_2 = QFrame(self.frame_12)
         self.TOPBUT_2.setObjectName(u"TOPBUT_2")
-        self.TOPBUT_2.setGeometry(QRect(40, 0, 1205, 40))
         self.TOPBUT_2.setMaximumSize(QSize(16777215, 60))
         self.TOPBUT_2.setStyleSheet(u"background-color: rgba(0, 0, 0,0);")
         self.TOPBUT_2.setFrameShape(QFrame.StyledPanel)
@@ -1030,6 +1061,841 @@ class Ui_MainWindow(object):
         self.horizontalLayout_10.setSpacing(0)
         self.horizontalLayout_10.setObjectName(u"horizontalLayout_10")
         self.horizontalLayout_10.setContentsMargins(0, 0, 0, 0)
+        self.pushButton_10 = QPushButton(self.TOPBUT_2)
+        self.pushButton_10.setObjectName(u"pushButton_10")
+        self.pushButton_10.setMinimumSize(QSize(120, 40))
+        self.pushButton_10.setFont(font3)
+        self.pushButton_10.setStyleSheet(u"\n"
+"\n"
+"\n"
+"\n"
+"QPushButton{\n"
+"	\n"
+"border-bottom: 1px solid rgb(0, 188, 242);\n"
+"	color: rgb(255, 255, 255);\n"
+"    background-color: rgba(0, 0, 0, 0); \n"
+"	 text-align: center;\n"
+"	border-radius:0px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"	\n"
+"	\n"
+"background-color: rgba(0, 0, 0, 0); \n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"	\n"
+"border-bottom: 1px solid rgb(0, 188, 242);\n"
+"\n"
+"}")
+
+        self.horizontalLayout_10.addWidget(self.pushButton_10)
+
+        self.pushButton_11 = QPushButton(self.TOPBUT_2)
+        self.pushButton_11.setObjectName(u"pushButton_11")
+        self.pushButton_11.setMinimumSize(QSize(120, 40))
+        self.pushButton_11.setFont(font3)
+        self.pushButton_11.setStyleSheet(u"\n"
+"\n"
+"\n"
+"\n"
+"QPushButton{\n"
+"	\n"
+"border-bottom: 3px solid rgba(255, 255, 255, 0); \n"
+"	color: rgb(255, 255, 255);\n"
+"    background-color: rgba(0, 0, 0, 0); \n"
+"	 text-align: center;\n"
+"	border-radius:0px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"	\n"
+"	\n"
+"background-color: rgba(0, 0, 0, 0); \n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"border-radius:0px;\n"
+"border-bottom: 1px solid rgb(0, 188, 242);\n"
+"\n"
+"}")
+
+        self.horizontalLayout_10.addWidget(self.pushButton_11)
+
+        self.pushButton_12 = QPushButton(self.TOPBUT_2)
+        self.pushButton_12.setObjectName(u"pushButton_12")
+        self.pushButton_12.setMinimumSize(QSize(120, 40))
+        self.pushButton_12.setFont(font3)
+        self.pushButton_12.setStyleSheet(u"\n"
+"\n"
+"\n"
+"\n"
+"QPushButton{\n"
+"	\n"
+"border-bottom: 3px solid rgba(255, 255, 255, 0); \n"
+"	color: rgb(255, 255, 255);\n"
+"    background-color: rgba(0, 0, 0, 0); \n"
+"	 text-align: center;\n"
+"	border-radius:0px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"	\n"
+"	\n"
+"background-color: rgba(0, 0, 0, 0); \n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"border-radius:0px;\n"
+"border-bottom: 1px solid rgb(0, 188, 242);\n"
+"\n"
+"}")
+
+        self.horizontalLayout_10.addWidget(self.pushButton_12)
+
+        self.horizontalSpacer_3 = QSpacerItem(0, 0, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_10.addItem(self.horizontalSpacer_3)
+
+
+        self.verticalLayout_12.addWidget(self.TOPBUT_2)
+
+        self.tela_pages = QStackedWidget(self.frame_12)
+        self.tela_pages.setObjectName(u"tela_pages")
+        self.tela_pages.setFrameShape(QFrame.StyledPanel)
+        self.tela_pages.setFrameShadow(QFrame.Raised)
+        self.tel_page1 = QWidget()
+        self.tel_page1.setObjectName(u"tel_page1")
+        self.verticalLayout_13 = QVBoxLayout(self.tel_page1)
+        self.verticalLayout_13.setObjectName(u"verticalLayout_13")
+        self.scrollArea = QScrollArea(self.tel_page1)
+        self.scrollArea.setObjectName(u"scrollArea")
+        self.scrollArea.setStyleSheet(u"")
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollAreaWidgetContents_2 = QWidget()
+        self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
+        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 1306, 808))
+        self.verticalLayout_14 = QVBoxLayout(self.scrollAreaWidgetContents_2)
+        self.verticalLayout_14.setObjectName(u"verticalLayout_14")
+        self.frame_22 = QFrame(self.scrollAreaWidgetContents_2)
+        self.frame_22.setObjectName(u"frame_22")
+        self.frame_22.setMaximumSize(QSize(700, 16777215))
+        self.frame_22.setStyleSheet(u"\n"
+"background-color: rgba(0, 0, 0,0);\n"
+"\n"
+"border-radius:10px;\n"
+"")
+        self.frame_22.setFrameShape(QFrame.StyledPanel)
+        self.frame_22.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_18 = QHBoxLayout(self.frame_22)
+        self.horizontalLayout_18.setSpacing(20)
+        self.horizontalLayout_18.setObjectName(u"horizontalLayout_18")
+        self.label_10 = QLabel(self.frame_22)
+        self.label_10.setObjectName(u"label_10")
+        self.label_10.setMinimumSize(QSize(400, 60))
+        self.label_10.setFont(font)
+        self.label_10.setStyleSheet(u"background-color: rgba(0, 0, 0, 0); \n"
+"color: rgb(255, 255, 255);")
+
+        self.horizontalLayout_18.addWidget(self.label_10)
+
+        self.changeres = QComboBox(self.frame_22)
+        self.changeres.addItem("")
+        self.changeres.addItem("")
+        self.changeres.addItem("")
+        self.changeres.setObjectName(u"changeres")
+        font7 = QFont()
+        font7.setFamily(u"IntelOne Display")
+        font7.setPointSize(12)
+        font7.setBold(False)
+        font7.setItalic(False)
+        font7.setUnderline(False)
+        font7.setWeight(50)
+        font7.setStrikeOut(False)
+        self.changeres.setFont(font7)
+        self.changeres.setContextMenuPolicy(Qt.DefaultContextMenu)
+        self.changeres.setLayoutDirection(Qt.LeftToRight)
+        self.changeres.setStyleSheet(u"border-radius:0px;\n"
+"color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0); \n"
+"	 text-align: right;\n"
+"")
+
+        self.horizontalLayout_18.addWidget(self.changeres)
+
+        self.aply_res = QPushButton(self.frame_22)
+        self.aply_res.setObjectName(u"aply_res")
+        self.aply_res.setMinimumSize(QSize(0, 0))
+        self.aply_res.setMaximumSize(QSize(120, 30))
+        self.aply_res.setSizeIncrement(QSize(30, 0))
+        self.aply_res.setFont(font6)
+        self.aply_res.setStyleSheet(u"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"QPushButton{\n"
+"\n"
+"\n"
+"	background-color: rgba(255, 255, 255, 70);\n"
+"	border-radius:10px;\n"
+"\n"
+"	color: rgb(255, 255, 255);\n"
+"\n"
+"	 text-align: center;\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"	\n"
+"	\n"
+"background-color: rgba(255, 255, 255, 98); \n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"	\n"
+"background-color: rgba(255, 255, 255, 150); \n"
+"\n"
+"}")
+
+        self.horizontalLayout_18.addWidget(self.aply_res)
+
+
+        self.verticalLayout_14.addWidget(self.frame_22)
+
+        self.frame_17 = QFrame(self.scrollAreaWidgetContents_2)
+        self.frame_17.setObjectName(u"frame_17")
+        self.frame_17.setMaximumSize(QSize(700, 16777215))
+        self.frame_17.setStyleSheet(u"\n"
+"background-color: rgba(0, 0, 0,0);\n"
+"\n"
+"border-radius:10px;\n"
+"")
+        self.frame_17.setFrameShape(QFrame.StyledPanel)
+        self.frame_17.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_13 = QHBoxLayout(self.frame_17)
+        self.horizontalLayout_13.setSpacing(20)
+        self.horizontalLayout_13.setObjectName(u"horizontalLayout_13")
+        self.label_5 = QLabel(self.frame_17)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setMinimumSize(QSize(400, 60))
+        self.label_5.setFont(font)
+        self.label_5.setStyleSheet(u"background-color: rgba(0, 0, 0, 0); \n"
+"color: rgb(255, 255, 255);")
+
+        self.horizontalLayout_13.addWidget(self.label_5)
+
+        self.changeres_3 = QComboBox(self.frame_17)
+        self.changeres_3.addItem("")
+        self.changeres_3.addItem("")
+        self.changeres_3.addItem("")
+        self.changeres_3.addItem("")
+        self.changeres_3.setObjectName(u"changeres_3")
+        self.changeres_3.setFont(font6)
+        self.changeres_3.setLayoutDirection(Qt.LeftToRight)
+        self.changeres_3.setStyleSheet(u"	border-radius:0px;\n"
+"\n"
+"	color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0); \n"
+"text-align: center;\n"
+"")
+
+        self.horizontalLayout_13.addWidget(self.changeres_3)
+
+        self.aply_res_3 = QPushButton(self.frame_17)
+        self.aply_res_3.setObjectName(u"aply_res_3")
+        self.aply_res_3.setMaximumSize(QSize(120, 30))
+        self.aply_res_3.setFont(font6)
+        self.aply_res_3.setStyleSheet(u"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"QPushButton{\n"
+"\n"
+"\n"
+"	background-color: rgba(255, 255, 255, 70);\n"
+"	border-radius:10px;\n"
+"\n"
+"	color: rgb(255, 255, 255);\n"
+"\n"
+"	 text-align: center;\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"	\n"
+"	\n"
+"background-color: rgba(255, 255, 255, 98); \n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"	\n"
+"background-color: rgba(255, 255, 255, 150); \n"
+"\n"
+"}")
+
+        self.horizontalLayout_13.addWidget(self.aply_res_3)
+
+
+        self.verticalLayout_14.addWidget(self.frame_17)
+
+        self.frame_24 = QFrame(self.scrollAreaWidgetContents_2)
+        self.frame_24.setObjectName(u"frame_24")
+        self.frame_24.setMaximumSize(QSize(700, 16777215))
+        self.frame_24.setStyleSheet(u"\n"
+"background-color: rgba(0, 0, 0,0);\n"
+"\n"
+"border-radius:10px;\n"
+"")
+        self.frame_24.setFrameShape(QFrame.StyledPanel)
+        self.frame_24.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_20 = QHBoxLayout(self.frame_24)
+        self.horizontalLayout_20.setSpacing(20)
+        self.horizontalLayout_20.setObjectName(u"horizontalLayout_20")
+        self.label_12 = QLabel(self.frame_24)
+        self.label_12.setObjectName(u"label_12")
+        self.label_12.setMinimumSize(QSize(400, 60))
+        self.label_12.setFont(font)
+        self.label_12.setStyleSheet(u"background-color: rgba(0, 0, 0, 0); \n"
+"color: rgb(255, 255, 255);")
+
+        self.horizontalLayout_20.addWidget(self.label_12)
+
+        self.changeres_10 = QComboBox(self.frame_24)
+        self.changeres_10.addItem("")
+        self.changeres_10.addItem("")
+        self.changeres_10.addItem("")
+        self.changeres_10.setObjectName(u"changeres_10")
+        self.changeres_10.setFont(font6)
+        self.changeres_10.setStyleSheet(u"	border-radius:0px;\n"
+"\n"
+"	color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0); \n"
+"	 text-align: left;\n"
+"")
+
+        self.horizontalLayout_20.addWidget(self.changeres_10)
+
+        self.aply_res_10 = QPushButton(self.frame_24)
+        self.aply_res_10.setObjectName(u"aply_res_10")
+        self.aply_res_10.setMaximumSize(QSize(120, 30))
+        self.aply_res_10.setFont(font6)
+        self.aply_res_10.setStyleSheet(u"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"QPushButton{\n"
+"\n"
+"\n"
+"	background-color: rgba(255, 255, 255, 70);\n"
+"	border-radius:10px;\n"
+"\n"
+"	color: rgb(255, 255, 255);\n"
+"\n"
+"	 text-align: center;\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"	\n"
+"	\n"
+"background-color: rgba(255, 255, 255, 98); \n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"	\n"
+"background-color: rgba(255, 255, 255, 150); \n"
+"\n"
+"}")
+
+        self.horizontalLayout_20.addWidget(self.aply_res_10)
+
+
+        self.verticalLayout_14.addWidget(self.frame_24)
+
+        self.frame_23 = QFrame(self.scrollAreaWidgetContents_2)
+        self.frame_23.setObjectName(u"frame_23")
+        self.frame_23.setMaximumSize(QSize(700, 16777215))
+        self.frame_23.setStyleSheet(u"\n"
+"background-color: rgba(0, 0, 0,0);\n"
+"\n"
+"border-radius:10px;\n"
+"")
+        self.frame_23.setFrameShape(QFrame.StyledPanel)
+        self.frame_23.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_19 = QHBoxLayout(self.frame_23)
+        self.horizontalLayout_19.setSpacing(20)
+        self.horizontalLayout_19.setObjectName(u"horizontalLayout_19")
+        self.label_11 = QLabel(self.frame_23)
+        self.label_11.setObjectName(u"label_11")
+        self.label_11.setMinimumSize(QSize(400, 60))
+        self.label_11.setFont(font)
+        self.label_11.setStyleSheet(u"background-color: rgba(0, 0, 0, 0); \n"
+"color: rgb(255, 255, 255);")
+
+        self.horizontalLayout_19.addWidget(self.label_11)
+
+        self.changeres_9 = QComboBox(self.frame_23)
+        self.changeres_9.addItem("")
+        self.changeres_9.addItem("")
+        self.changeres_9.addItem("")
+        self.changeres_9.addItem("")
+        self.changeres_9.setObjectName(u"changeres_9")
+        self.changeres_9.setFont(font6)
+        self.changeres_9.setStyleSheet(u"	border-radius:0px;\n"
+"\n"
+"	color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0); \n"
+"	 text-align: left;\n"
+"")
+
+        self.horizontalLayout_19.addWidget(self.changeres_9)
+
+        self.aply_res_9 = QPushButton(self.frame_23)
+        self.aply_res_9.setObjectName(u"aply_res_9")
+        self.aply_res_9.setMinimumSize(QSize(120, 30))
+        self.aply_res_9.setMaximumSize(QSize(120, 30))
+        self.aply_res_9.setFont(font6)
+        self.aply_res_9.setStyleSheet(u"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"QPushButton{\n"
+"\n"
+"\n"
+"	background-color: rgba(255, 255, 255, 70);\n"
+"	border-radius:10px;\n"
+"\n"
+"	color: rgb(255, 255, 255);\n"
+"\n"
+"	 text-align: center;\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"	\n"
+"	\n"
+"background-color: rgba(255, 255, 255, 98); \n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"	\n"
+"background-color: rgba(255, 255, 255, 150); \n"
+"\n"
+"}")
+
+        self.horizontalLayout_19.addWidget(self.aply_res_9)
+
+
+        self.verticalLayout_14.addWidget(self.frame_23)
+
+        self.frame_16 = QFrame(self.scrollAreaWidgetContents_2)
+        self.frame_16.setObjectName(u"frame_16")
+        self.frame_16.setMaximumSize(QSize(700, 16777215))
+        self.frame_16.setStyleSheet(u"\n"
+"background-color: rgba(0, 0, 0,0);\n"
+"\n"
+"border-radius:10px;\n"
+"")
+        self.frame_16.setFrameShape(QFrame.StyledPanel)
+        self.frame_16.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_12 = QHBoxLayout(self.frame_16)
+        self.horizontalLayout_12.setSpacing(20)
+        self.horizontalLayout_12.setObjectName(u"horizontalLayout_12")
+        self.label_4 = QLabel(self.frame_16)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setMinimumSize(QSize(400, 60))
+        self.label_4.setFont(font)
+        self.label_4.setStyleSheet(u"background-color: rgba(0, 0, 0, 0); \n"
+"color: rgb(255, 255, 255);")
+
+        self.horizontalLayout_12.addWidget(self.label_4)
+
+        self.changeres_2 = QComboBox(self.frame_16)
+        self.changeres_2.addItem("")
+        self.changeres_2.addItem("")
+        self.changeres_2.addItem("")
+        self.changeres_2.setObjectName(u"changeres_2")
+        self.changeres_2.setFont(font6)
+        self.changeres_2.setStyleSheet(u"	border-radius:0px;\n"
+"\n"
+"	color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0); \n"
+"	 text-align: left;\n"
+"")
+
+        self.horizontalLayout_12.addWidget(self.changeres_2)
+
+        self.aply_res_2 = QPushButton(self.frame_16)
+        self.aply_res_2.setObjectName(u"aply_res_2")
+        self.aply_res_2.setMaximumSize(QSize(120, 30))
+        self.aply_res_2.setFont(font6)
+        self.aply_res_2.setStyleSheet(u"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"QPushButton{\n"
+"\n"
+"\n"
+"	background-color: rgba(255, 255, 255, 70);\n"
+"	border-radius:10px;\n"
+"\n"
+"	color: rgb(255, 255, 255);\n"
+"\n"
+"	 text-align: center;\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"	\n"
+"	\n"
+"background-color: rgba(255, 255, 255, 98); \n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"	\n"
+"background-color: rgba(255, 255, 255, 150); \n"
+"\n"
+"}")
+
+        self.horizontalLayout_12.addWidget(self.aply_res_2)
+
+
+        self.verticalLayout_14.addWidget(self.frame_16)
+
+        self.frame_18 = QFrame(self.scrollAreaWidgetContents_2)
+        self.frame_18.setObjectName(u"frame_18")
+        self.frame_18.setMaximumSize(QSize(700, 16777215))
+        self.frame_18.setStyleSheet(u"\n"
+"background-color: rgba(0, 0, 0,0);\n"
+"\n"
+"border-radius:10px;\n"
+"")
+        self.frame_18.setFrameShape(QFrame.StyledPanel)
+        self.frame_18.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_14 = QHBoxLayout(self.frame_18)
+        self.horizontalLayout_14.setSpacing(20)
+        self.horizontalLayout_14.setObjectName(u"horizontalLayout_14")
+        self.label_6 = QLabel(self.frame_18)
+        self.label_6.setObjectName(u"label_6")
+        self.label_6.setMinimumSize(QSize(400, 100))
+        self.label_6.setFont(font)
+        self.label_6.setStyleSheet(u"background-color: rgba(0, 0, 0, 0); \n"
+"color: rgb(255, 255, 255);")
+
+        self.horizontalLayout_14.addWidget(self.label_6)
+
+        self.changeres_4 = QComboBox(self.frame_18)
+        self.changeres_4.addItem("")
+        self.changeres_4.addItem("")
+        self.changeres_4.addItem("")
+        self.changeres_4.setObjectName(u"changeres_4")
+        self.changeres_4.setFont(font6)
+        self.changeres_4.setStyleSheet(u"	border-radius:0px;\n"
+"\n"
+"	color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0); \n"
+"	 text-align: left;\n"
+"")
+
+        self.horizontalLayout_14.addWidget(self.changeres_4)
+
+        self.aply_res_4 = QPushButton(self.frame_18)
+        self.aply_res_4.setObjectName(u"aply_res_4")
+        self.aply_res_4.setMaximumSize(QSize(120, 30))
+        self.aply_res_4.setFont(font6)
+        self.aply_res_4.setStyleSheet(u"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"QPushButton{\n"
+"\n"
+"\n"
+"	background-color: rgba(255, 255, 255, 70);\n"
+"	border-radius:10px;\n"
+"\n"
+"	color: rgb(255, 255, 255);\n"
+"\n"
+"	 text-align: center;\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"	\n"
+"	\n"
+"background-color: rgba(255, 255, 255, 98); \n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"	\n"
+"background-color: rgba(255, 255, 255, 150); \n"
+"\n"
+"}")
+
+        self.horizontalLayout_14.addWidget(self.aply_res_4)
+
+
+        self.verticalLayout_14.addWidget(self.frame_18)
+
+        self.frame_20 = QFrame(self.scrollAreaWidgetContents_2)
+        self.frame_20.setObjectName(u"frame_20")
+        self.frame_20.setMaximumSize(QSize(700, 16777215))
+        self.frame_20.setStyleSheet(u"\n"
+"background-color: rgba(0, 0, 0,0);\n"
+"\n"
+"border-radius:10px;\n"
+"")
+        self.frame_20.setFrameShape(QFrame.StyledPanel)
+        self.frame_20.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_16 = QHBoxLayout(self.frame_20)
+        self.horizontalLayout_16.setSpacing(20)
+        self.horizontalLayout_16.setObjectName(u"horizontalLayout_16")
+        self.label_8 = QLabel(self.frame_20)
+        self.label_8.setObjectName(u"label_8")
+        self.label_8.setMinimumSize(QSize(400, 60))
+        self.label_8.setFont(font)
+        self.label_8.setStyleSheet(u"background-color: rgba(0, 0, 0, 0); \n"
+"color: rgb(255, 255, 255);")
+
+        self.horizontalLayout_16.addWidget(self.label_8)
+
+        self.changeres_6 = QComboBox(self.frame_20)
+        self.changeres_6.addItem("")
+        self.changeres_6.addItem("")
+        self.changeres_6.addItem("")
+        self.changeres_6.setObjectName(u"changeres_6")
+        self.changeres_6.setFont(font6)
+        self.changeres_6.setStyleSheet(u"	border-radius:0px;\n"
+"\n"
+"	color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0); \n"
+"	 text-align: left;\n"
+"")
+
+        self.horizontalLayout_16.addWidget(self.changeres_6)
+
+        self.aply_res_6 = QPushButton(self.frame_20)
+        self.aply_res_6.setObjectName(u"aply_res_6")
+        self.aply_res_6.setMaximumSize(QSize(120, 30))
+        self.aply_res_6.setFont(font6)
+        self.aply_res_6.setStyleSheet(u"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"QPushButton{\n"
+"\n"
+"\n"
+"	background-color: rgba(255, 255, 255, 70);\n"
+"	border-radius:10px;\n"
+"\n"
+"	color: rgb(255, 255, 255);\n"
+"\n"
+"	 text-align: center;\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"	\n"
+"	\n"
+"background-color: rgba(255, 255, 255, 98); \n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"	\n"
+"background-color: rgba(255, 255, 255, 150); \n"
+"\n"
+"}")
+
+        self.horizontalLayout_16.addWidget(self.aply_res_6)
+
+
+        self.verticalLayout_14.addWidget(self.frame_20)
+
+        self.frame_19 = QFrame(self.scrollAreaWidgetContents_2)
+        self.frame_19.setObjectName(u"frame_19")
+        self.frame_19.setMaximumSize(QSize(700, 16777215))
+        self.frame_19.setStyleSheet(u"\n"
+"background-color: rgba(0, 0, 0,0);\n"
+"\n"
+"border-radius:10px;\n"
+"")
+        self.frame_19.setFrameShape(QFrame.StyledPanel)
+        self.frame_19.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_15 = QHBoxLayout(self.frame_19)
+        self.horizontalLayout_15.setSpacing(20)
+        self.horizontalLayout_15.setObjectName(u"horizontalLayout_15")
+        self.label_7 = QLabel(self.frame_19)
+        self.label_7.setObjectName(u"label_7")
+        self.label_7.setMinimumSize(QSize(400, 60))
+        self.label_7.setFont(font)
+        self.label_7.setStyleSheet(u"background-color: rgba(0, 0, 0, 0); \n"
+"color: rgb(255, 255, 255);")
+
+        self.horizontalLayout_15.addWidget(self.label_7)
+
+        self.changeres_5 = QComboBox(self.frame_19)
+        self.changeres_5.addItem("")
+        self.changeres_5.addItem("")
+        self.changeres_5.addItem("")
+        self.changeres_5.setObjectName(u"changeres_5")
+        self.changeres_5.setFont(font6)
+        self.changeres_5.setStyleSheet(u"	border-radius:0px;\n"
+"\n"
+"	color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0); \n"
+"	 text-align: left;\n"
+"")
+
+        self.horizontalLayout_15.addWidget(self.changeres_5)
+
+        self.aply_res_5 = QPushButton(self.frame_19)
+        self.aply_res_5.setObjectName(u"aply_res_5")
+        self.aply_res_5.setMaximumSize(QSize(120, 30))
+        self.aply_res_5.setFont(font6)
+        self.aply_res_5.setStyleSheet(u"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"QPushButton{\n"
+"\n"
+"\n"
+"	background-color: rgba(255, 255, 255, 70);\n"
+"	border-radius:10px;\n"
+"\n"
+"	color: rgb(255, 255, 255);\n"
+"\n"
+"	 text-align: center;\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"	\n"
+"	\n"
+"background-color: rgba(255, 255, 255, 98); \n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"	\n"
+"background-color: rgba(255, 255, 255, 150); \n"
+"\n"
+"}")
+
+        self.horizontalLayout_15.addWidget(self.aply_res_5)
+
+
+        self.verticalLayout_14.addWidget(self.frame_19)
+
+        self.frame_21 = QFrame(self.scrollAreaWidgetContents_2)
+        self.frame_21.setObjectName(u"frame_21")
+        self.frame_21.setMaximumSize(QSize(700, 16777215))
+        self.frame_21.setStyleSheet(u"\n"
+"background-color: rgba(0, 0, 0,0);\n"
+"\n"
+"border-radius:10px;\n"
+"")
+        self.frame_21.setFrameShape(QFrame.StyledPanel)
+        self.frame_21.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_17 = QHBoxLayout(self.frame_21)
+        self.horizontalLayout_17.setSpacing(20)
+        self.horizontalLayout_17.setObjectName(u"horizontalLayout_17")
+        self.label_9 = QLabel(self.frame_21)
+        self.label_9.setObjectName(u"label_9")
+        self.label_9.setMinimumSize(QSize(400, 60))
+        self.label_9.setFont(font)
+        self.label_9.setStyleSheet(u"background-color: rgba(0, 0, 0, 0); \n"
+"color: rgb(255, 255, 255);")
+
+        self.horizontalLayout_17.addWidget(self.label_9)
+
+        self.changeres_7 = QComboBox(self.frame_21)
+        self.changeres_7.addItem("")
+        self.changeres_7.addItem("")
+        self.changeres_7.addItem("")
+        self.changeres_7.setObjectName(u"changeres_7")
+        self.changeres_7.setFont(font6)
+        self.changeres_7.setStyleSheet(u"	border-radius:0px;\n"
+"\n"
+"	color: rgb(255, 255, 255);\n"
+"background-color: rgba(255, 255, 255, 0); \n"
+"	 text-align: left;\n"
+"")
+
+        self.horizontalLayout_17.addWidget(self.changeres_7)
+
+        self.aply_res_7 = QPushButton(self.frame_21)
+        self.aply_res_7.setObjectName(u"aply_res_7")
+        self.aply_res_7.setFont(font6)
+        self.aply_res_7.setStyleSheet(u"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"QPushButton{\n"
+"\n"
+"\n"
+"	background-color: rgba(255, 255, 255, 70);\n"
+"	border-radius:10px;\n"
+"\n"
+"	color: rgb(255, 255, 255);\n"
+"\n"
+"	 text-align: center;\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"	\n"
+"	\n"
+"background-color: rgba(255, 255, 255, 98); \n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"	\n"
+"background-color: rgba(255, 255, 255, 150); \n"
+"\n"
+"}")
+
+        self.horizontalLayout_17.addWidget(self.aply_res_7)
+
+
+        self.verticalLayout_14.addWidget(self.frame_21)
+
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents_2)
+
+        self.verticalLayout_13.addWidget(self.scrollArea)
+
+        self.tela_pages.addWidget(self.tel_page1)
+        self.tel_page3 = QWidget()
+        self.tel_page3.setObjectName(u"tel_page3")
+        self.tela_pages.addWidget(self.tel_page3)
+        self.tel_page2 = QWidget()
+        self.tel_page2.setObjectName(u"tel_page2")
+        self.tela_pages.addWidget(self.tel_page2)
+
+        self.verticalLayout_12.addWidget(self.tela_pages)
+
+
+        self.verticalLayout_11.addWidget(self.frame_12)
+
         self.contets.addWidget(self.contetsPage2)
 
         self.verticalLayout_2.addWidget(self.contets)
@@ -1085,4 +1951,64 @@ class Ui_MainWindow(object):
 "Selecione um jogo para adicionar \u00e0 sua biblioteca.\n"
 "", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ffffff;\">V\u00e1 para os c\u00e9us e experimente a alegria de voar na pr\u00f3xima gera\u00e7\u00e3o do Microsoft Flight Simulator.</span></p><p><span style=\" color:#ffffff;\"> O mundo est\u00e1 ao seu alcance.</span></p></body></html>", None))
+        self.pushButton_10.setText(QCoreApplication.translate("MainWindow", u"Geral", None))
+        self.pushButton_11.setText(QCoreApplication.translate("MainWindow", u"Cor", None))
+        self.pushButton_12.setText(QCoreApplication.translate("MainWindow", u"informa\u00e7\u00f5es", None))
+        self.label_10.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; font-weight:600;\">Resolu\u00e7\u00e3o:</span></p><p><span style=\" font-size:10pt;\">O n\u00famero de pixels que podem ser exibidos na tela.</span></p></body></html>", None))
+        self.changeres.setItemText(0, QCoreApplication.translate("MainWindow", u"1920 x 1080", None))
+        self.changeres.setItemText(1, QCoreApplication.translate("MainWindow", u"1680 x 1050", None))
+        self.changeres.setItemText(2, QCoreApplication.translate("MainWindow", u"1366 x 768", None))
+
+        self.aply_res.setText(QCoreApplication.translate("MainWindow", u"Aplicar", None))
+        self.label_5.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; font-weight:600;\">Taxa de atualiza\u00e7\u00e3o:</span></p><p><span style=\" font-size:10pt;\">O n\u00famero de vezes em que a imagem na tela \u00e9</span></p><p><span style=\" font-size:10pt;\"> atualizada a cada segundo</span></p></body></html>", None))
+        self.changeres_3.setItemText(0, QCoreApplication.translate("MainWindow", u"74", None))
+        self.changeres_3.setItemText(1, QCoreApplication.translate("MainWindow", u"60", None))
+        self.changeres_3.setItemText(2, QCoreApplication.translate("MainWindow", u"59", None))
+        self.changeres_3.setItemText(3, QCoreApplication.translate("MainWindow", u"30", None))
+
+        self.aply_res_3.setText(QCoreApplication.translate("MainWindow", u"Aplicar", None))
+        self.label_12.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; font-weight:600;\">Escala:</span></p><p><span style=\" font-size:10pt;\">O tamanho em que o conte\u00fado da tela \u00e9 exibido.</span></p></body></html>", None))
+        self.changeres_10.setItemText(0, QCoreApplication.translate("MainWindow", u"1920 x 1080", None))
+        self.changeres_10.setItemText(1, QCoreApplication.translate("MainWindow", u"1680 x 1050", None))
+        self.changeres_10.setItemText(2, QCoreApplication.translate("MainWindow", u"1366 x 768", None))
+
+        self.aply_res_10.setText(QCoreApplication.translate("MainWindow", u"Aplicar", None))
+        self.label_11.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; font-weight:600;\">Rota\u00e7\u00e3o:</span></p><p><span style=\" font-size:10pt;\">O layout da sua \u00e1rea de trabalho para configura\u00e7\u00e3o de  exibi\u00e7\u00e3o.</span></p></body></html>", None))
+        self.changeres_9.setItemText(0, QCoreApplication.translate("MainWindow", u"Paisagem", None))
+        self.changeres_9.setItemText(1, QCoreApplication.translate("MainWindow", u"Retrato", None))
+        self.changeres_9.setItemText(2, QCoreApplication.translate("MainWindow", u"Paisagem (Invertido)", None))
+        self.changeres_9.setItemText(3, QCoreApplication.translate("MainWindow", u"Retrato (Invertido)", None))
+
+        self.aply_res_9.setText(QCoreApplication.translate("MainWindow", u"Aplicar", None))
+        self.label_4.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; font-weight:600;\">Resolu\u00e7\u00e3o:</span></p><p><span style=\" font-size:10pt;\">O n\u00famero de pixels que podem ser exibidos na tela.</span></p></body></html>", None))
+        self.changeres_2.setItemText(0, QCoreApplication.translate("MainWindow", u"1920 x 1080", None))
+        self.changeres_2.setItemText(1, QCoreApplication.translate("MainWindow", u"1680 x 1050", None))
+        self.changeres_2.setItemText(2, QCoreApplication.translate("MainWindow", u"1366 x 768", None))
+
+        self.aply_res_2.setText(QCoreApplication.translate("MainWindow", u"Aplicar", None))
+        self.label_6.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; font-weight:600;\">Taxa de atualiza\u00e7\u00e3o:</span></p><p><span style=\" font-size:10pt;\">O n\u00famero de  vezes em que a imagem na tela \u00e9 atualizada</span></p><p><span style=\" font-size:10pt;\">a cada segundo</span></p></body></html>", None))
+        self.changeres_4.setItemText(0, QCoreApplication.translate("MainWindow", u"1920 x 1080", None))
+        self.changeres_4.setItemText(1, QCoreApplication.translate("MainWindow", u"1680 x 1050", None))
+        self.changeres_4.setItemText(2, QCoreApplication.translate("MainWindow", u"1366 x 768", None))
+
+        self.aply_res_4.setText(QCoreApplication.translate("MainWindow", u"Aplicar", None))
+        self.label_8.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; font-weight:600;\">Resolu\u00e7\u00e3o:</span></p><p><span style=\" font-size:10pt;\">O n\u00famero de pixels que podem ser exibidos na tela.</span></p></body></html>", None))
+        self.changeres_6.setItemText(0, QCoreApplication.translate("MainWindow", u"1920 x 1080", None))
+        self.changeres_6.setItemText(1, QCoreApplication.translate("MainWindow", u"1680 x 1050", None))
+        self.changeres_6.setItemText(2, QCoreApplication.translate("MainWindow", u"1366 x 768", None))
+
+        self.aply_res_6.setText(QCoreApplication.translate("MainWindow", u"Aplicar", None))
+        self.label_7.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; font-weight:600;\">Resolu\u00e7\u00e3o:</span></p><p><span style=\" font-size:10pt;\">O n\u00famero de pixels que podem ser exibidos na tela.</span></p></body></html>", None))
+        self.changeres_5.setItemText(0, QCoreApplication.translate("MainWindow", u"1920 x 1080", None))
+        self.changeres_5.setItemText(1, QCoreApplication.translate("MainWindow", u"1680 x 1050", None))
+        self.changeres_5.setItemText(2, QCoreApplication.translate("MainWindow", u"1366 x 768", None))
+
+        self.aply_res_5.setText(QCoreApplication.translate("MainWindow", u"Aplicar", None))
+        self.label_9.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; font-weight:600;\">Resolu\u00e7\u00e3o:</span></p><p><span style=\" font-size:10pt;\">O n\u00famero de pixels que podem ser exibidos na tela.</span></p></body></html>", None))
+        self.changeres_7.setItemText(0, QCoreApplication.translate("MainWindow", u"1920 x 1080", None))
+        self.changeres_7.setItemText(1, QCoreApplication.translate("MainWindow", u"1680 x 1050", None))
+        self.changeres_7.setItemText(2, QCoreApplication.translate("MainWindow", u"1366 x 768", None))
+
+        self.aply_res_7.setText(QCoreApplication.translate("MainWindow", u"Aplicar", None))
     # retranslateUi
+

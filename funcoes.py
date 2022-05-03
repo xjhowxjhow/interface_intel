@@ -1,4 +1,5 @@
 from itertools import count
+from tkinter import W
 import intel
 from PySide2 import QtCore, QtGui, QtWidgets
 from PySide2.QtCore import (QCoreApplication, QPropertyAnimation, QDate, QDateTime, QMetaObject, QObject, QPoint, QRect, QSize, QTime, QUrl, Qt, QEvent)
@@ -8,6 +9,9 @@ import threading
 from time import sleep
 import time
 from custom_qstacked_widgets import *
+import os
+import ctypes
+
 
 class funcoes():
     def changeimg(self):
@@ -45,3 +49,27 @@ class funcoes():
         thread = threading.Thread(target=therad)
         thread.start()  
             
+    def test_resol(self):
+        if self.changeres.currentText() == '1366 x 768':
+            w = 1366
+            h  = 768
+        if self.changeres.currentText() == '1920 x 1080':
+            w = 1920
+            h  = 1080
+            
+        user32 = ctypes.windll.user32
+        screensize = user32.GetSystemMetrics(0), user32.GetSystemMetrics(1)
+        print(screensize)
+        
+        import win32api
+        import win32con
+        import pywintypes
+
+        devmode = pywintypes.DEVMODEType()
+
+        devmode.PelsWidth = w
+        devmode.PelsHeight = h
+
+        devmode.Fields = win32con.DM_PELSWIDTH | win32con.DM_PELSHEIGHT
+
+        win32api.ChangeDisplaySettings(devmode, 0)
