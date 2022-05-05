@@ -8,7 +8,7 @@ import funcoes
 import effects
 from custom_qstacked_widgets import *
 
-WINDOW_SIZE = 0;
+WINDOW_SIZE = 1;
 
 class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 

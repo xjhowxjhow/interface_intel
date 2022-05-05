@@ -20,7 +20,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1739, 789)
+        MainWindow.resize(1739, 900)
         MainWindow.setStyleSheet(u"\n"
 "border-radius:10px;\n"
 "")
